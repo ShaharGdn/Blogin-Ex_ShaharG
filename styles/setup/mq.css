@@ -5,7 +5,7 @@
 
         top: 0;
         right: 0;
-        height: 100dvh;
+        height: 100dvh; 
         background-color: rgb(255 255 255 / 90%);
         border-inline-start: 1px solid #ccc;
         min-width: 300px;
@@ -43,6 +43,10 @@
     }
 
     .toggle-menu-btn {
+        grid-column: 3;
+        justify-self: end;
+        cursor: pointer;
+
         color: white;
         background: none;
         border: none;
@@ -50,12 +54,6 @@
         min-height: 100px;
         font-size: 45px;
         text-align: right;
-    }
-
-    .main-header .toggle-menu-btn {
-        grid-column: 3;
-        justify-self: end;
-        cursor: pointer;
     }
 
     .exit-sidebar-btn {

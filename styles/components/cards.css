@@ -1,6 +1,6 @@
 .card {
     display: grid;
-    grid-template-columns: minmax(600px, 1fr);
+    grid-template-columns: minmax(1fr, 600px);
 }
 
 .card > * {
@@ -11,6 +11,7 @@
 }
 
 .card .card-title {
+    font-size: 1.2em;
     grid-row: 2;
 }
 
