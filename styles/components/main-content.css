@@ -1,0 +1,12 @@
+.main-content {
+    display: grid;
+    grid-template-columns:
+      minmax(20px, 1fr)
+      minmax(auto, 600px)
+      minmax(20px, 1fr);
+  }
+  
+.main-content > * {
+    grid-column: 2;
+    margin-bottom: 30px;
+}

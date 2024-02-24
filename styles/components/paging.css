@@ -1,0 +1,28 @@
+.paging {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns:
+      minmax(20px, 1fr)
+      minmax(auto, 600px)
+      minmax(20px, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.paging button {
+    display: inline-block;
+    grid-column: 2;
+    grid-row: 1;
+    background: none;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-block: 2em;
+    color: var(--primary--1);
+}
+
+.paging .prev {
+    place-self: start;
+}
+.paging .next {
+    place-self: end;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogin</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://kit.fontawesome.com/e3925c34b8.js" crossorigin="anonymous"></script>
+</head>
+<body class="main-layout">
+    
+    <div class="main-screen" onclick="toggleMenu()"></div>
+
+    <header class="main-header">
+        <img class="header-logo" src="images/Blogin-Logo.png">
+        <nav class="main-nav">
+                <button class="exit-sidebar-btn" onclick="toggleMenu()">X</button>
+                <a href="#">Journal</a>
+                <a href="#">About</a>
+                <a href="#">Work</a> 
+                <a href="#">Contact</a>
+            </ul>
+        </nav>
+        <button class="toggle-menu-btn" type="button" onclick="toggleMenu()">☰</button>
+    </header>
+
+    <div class="main-content">
+        <div class="card">
+            <img class="card-image" src="images/Layer2.jpeg" alt="">
+            <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo maxime voluptate sunt ullam. Eum ut necessitatibus enim voluptate facilis labore, placeat deserunt repellat quibusdam quia veniam adipisci similique, perferendis tempore.</p>
+            <button class="card-btn">Continue Reading</button>
+        </div>
+        <div class="card">
+            <img class="card-image" src="images/Layer3.jpeg" alt="">
+            <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo maxime voluptate sunt ullam. Eum ut necessitatibus enim voluptate facilis labore, placeat deserunt repellat quibusdam quia veniam adipisci similique, perferendis tempore.</p>
+            <button class="card-btn">Continue Reading</button>
+        </div>
+        <div class="card">
+            <img class="card-image" src="images/Layer4.jpeg" alt="">
+            <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo maxime voluptate sunt ullam. Eum ut necessitatibus enim voluptate facilis labore, placeat deserunt repellat quibusdam quia veniam adipisci similique, perferendis tempore.</p>
+            <button class="card-btn">Continue Reading</button>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="paging">
+        <button class="prev"><i class="fa-solid fa-arrow-left"></i> Previous</button>
+        <button class="next">Next <i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+    
+    <footer class="main-footer">
+        <img class="footer-logo" src="images/Blogin-Logo-Black.png">
+        <small>© 2014 Blogin.com - All Rights Reserved - Find more free Templates at Pixelhint.com</small>
+        <ul class="footer-social flex clean-list">
+            <li><a href=""><img class="facebook-logo" src="images/FaceBook-Icon.png"></a></li>
+            <li><a href=""><img class="twitter-logo" src="images/Twitter-Icon.png"></a></li>
+            <li><a href=""><img class="be-logo" src="images/Be-Icon.png"></a></li>
+            <li><a href=""><img class="ball-logo" src="images/Ball-Icon.png"></a></li>
+        </ul>
+
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
