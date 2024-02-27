@@ -8,9 +8,11 @@
     background-color: var(--primary-base);
     height: 80px;
     margin-bottom: 20px;
-}
+    box-shadow: 1px -3px 0 black inset;
+  }
 
 .main-header .header-logo {
     grid-column: 2;
     grid-row: 1;
 }
+
