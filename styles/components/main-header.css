@@ -12,4 +12,5 @@
 
 .main-header .header-logo {
     grid-column: 2;
+    grid-row: 1;
 }

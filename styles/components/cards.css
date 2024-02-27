@@ -1,13 +1,6 @@
 .card {
     display: grid;
-    grid-template-columns: minmax(1fr, 600px);
-}
-
-.card > * {
-    width: 100%
-}
-.card .card-image {
-    grid-row: 1;
+    grid-template-columns: 1fr;
 }
 
 .card .card-title {
@@ -19,7 +12,14 @@
     grid-row: 3;
 }
 
+.card .card-image {
+    align-self: stretch;
+    object-fit: cover;
+}
+
 .card .card-btn {
     grid-row: 4;
-    width: 190px;
+    min-width: min-content;
+    place-self: start;
+    margin-top: auto;
 }
