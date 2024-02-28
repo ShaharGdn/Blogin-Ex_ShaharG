@@ -10,12 +10,13 @@
 <body class="main-layout">
     
     <div class="main-screen" onclick="toggleMenu()"></div>
+    <div class="modal-screen" onclick="toggleModal()"></div>
 
     <header class="main-header">
         <img class="header-logo" src="images/Blogin-Logo.png">
         <nav class="main-nav">
                 <button class="exit-sidebar-btn" onclick="toggleMenu()">X</button>
-                <a href="#">Journal</a>
+                <a class="active" href="#">Journal</a>
                 <a href="#">About</a>
                 <a href="#">Work</a> 
                 <a href="#">Contact</a>
@@ -32,7 +33,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo maxime voluptate sunt ullam. Eum ut necessitatibus enim voluptate facilis labore, placeat deserunt repellat quibusdam quia veniam adipisci similique, perferendis tempore.</p>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptate aperiam iusto alias mollitia, impedit delectus, incidunt laboriosam deserunt quod ad illo accusamus! Sit amet nulla possimus nam! Assumenda, doloribus.</p>
             </div>
-            <button class="card-btn btn">Continue Reading</button>
+            <button class="card-btn btn" onclick="toggleModal()">Continue Reading</button>
         </div>
         <div class="card">
             <img class="card-image" src="images/Layer3.jpeg" alt="">
@@ -41,7 +42,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo maxime voluptate sunt ullam. Eum ut necessitatibus enim voluptate facilis labore, placeat deserunt repellat quibusdam quia veniam adipisci similique, perferendis tempore.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni blanditiis, corrupti asperiores nesciunt quis nulla sapiente nobis consequatur assumenda iure ipsa laborum omnis sint incidunt numquam. Nisi ullam adipisci illum.</p>
             </div>            
-            <button class="card-btn btn">Continue Reading</button>
+            <button class="card-btn btn" onclick="toggleModal()">Continue Reading</button>
         </div>
         <div class="card">
             <img class="card-image" src="images/Layer4.jpeg" alt="">
@@ -50,10 +51,9 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo maxime voluptate sunt ullam. Eum ut necessitatibus enim voluptate facilis labore, placeat deserunt repellat quibusdam quia veniam adipisci similique, perferendis tempore.</p>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam aspernatur consectetur ratione eius quam praesentium delectus tempore exercitationem hic officiis, voluptatem fuga saepe, explicabo reiciendis optio nulla necessitatibus, vero odit?</p>
             </div>            
-            <button class="card-btn btn">Continue Reading</button>
+            <button class="card-btn btn" onclick="toggleModal()">Continue Reading</button>
         </div>
     </div>
-
     <hr>
 
     <div class="paging">
@@ -70,8 +70,16 @@
             <li><a href=""><img class="be-logo" src="images/Be-Icon.png"></a></li>
             <li><a href=""><img class="ball-logo" src="images/Ball-Icon.png"></a></li>
         </ul>
-
     </footer>
+
+    <div class="modal hidden">
+        <form class="modal-container centered" type="dialog">
+            <button class="close-btn" type="reset" onclick="toggleModal()">X</button>
+            <h3 class="modal-title">Join us to get access to the latest stories!</h3>
+            <input type="email" class="email-input" placeholder="enter your email here...">
+            <button class="submit-btn btn" type="reset" onclick="toggleModal()">SUBMIT</button>
+        </form>
+    </div>
 
     <script src="js/main.js"></script>
 </body>

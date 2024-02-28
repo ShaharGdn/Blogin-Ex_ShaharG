@@ -1,0 +1,22 @@
+
+.modal-container .modal-title {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.modal-container .close-btn {
+    grid-column: 1;
+    grid-row: 1;
+    place-self: end;
+}
+
+.modal-container .email-input {
+    grid-column: 1 span 2;
+    grid-row: 3;
+    height: 3em;
+}
+
+.modal-container .submit-btn {
+    grid-column: 1 span 2;
+    grid-row: 4;
+}

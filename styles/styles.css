@@ -14,6 +14,7 @@
 @import url(components/paging.css);
 @import url(components/cards.css);
 @import url(components/screen.css);
+@import url(components/modal.css);
 
 /* media queries */
 @import url(setup/mq.css);
